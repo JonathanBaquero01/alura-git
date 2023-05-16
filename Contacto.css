@@ -1,0 +1,114 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;/* espaciamiento externo-- superior-inferior laterales */
+    }
+    .caja{
+   
+        width: 940px; ;/* le digo a nuestro div q ocupe esto, 940 por q  las pantallas tienen 1080p */
+        position: relative;
+        margin: 0 auto;/* automatico a los bordes */
+    }
+
+    nav{
+        position: absolute;/* para poder modificar su posicionn */
+        top: 0; /* 0 es ningun espacio , tambn puedo  usar medidas  por ejemplo 50px*/
+        right: 0;
+    }
+    
+    nav li{
+    display: inline;/* pa volver la lista en horizontal, no le coloco liv directamente por q si uso otra lista, cogera esa propiedad */
+    margin: 0 0 0 15px;/* esopaciamiento interno, arriba derecha abajo izquierda */
+    
+    }
+
+    nav a{ /* hacemos referencia a nuestros items de la lista */
+        text-transform: uppercase;
+        color:black;
+        font-weight: bold;/* negrilla*/
+        font-size: 22px;
+        text-decoration: none;/* le quiito lo azulito del texto, asi cuando se sabe q un texto es un link*/
+        
+        }
+        nav a:hover{ /*hover captura el comportamiento del mov del mouse*/
+        color: #c78c19; /*osea q cuando q cuando captura el mouse, cambia de color*/
+        text-decoration: underline;/*tambn se subrayara*/
+        }
+
+footer{
+    text-align: center;
+    background: url(Imagenes/bg.jpg);/* Background me hace  un copy paste de la imagen hasta completar todo el footer*/
+    padding: 40px 0; /* padding de espaciamiento , vertical horizontal*/
+    }
+    
+.TextoCopyright{
+        color: white;
+        font-size: 13px;
+      /*  margin: 20px;*/
+    }
+
+main{
+    width: 940px; /*970 por q las pantallas son de 1080p*/
+    margin: 0 auto; /*0 pa arriba y abajo y automatico en los costados*/
+    }
+
+    form{
+        margin: 40px 0;/*40 arriba y abajo y 0 en los costados*/
+    }
+
+form label, form p{/*q se centre en los labels de nuestro form /* Puedo referenciar mas de uno/*/
+    display: block;/*pa q no este inLine y se meustre como uno abajo de otro*/
+    font-size: 20px;
+    margin: 0 0 10px;/* top derecha abajo*/
+    }
+
+.input-padron{
+    display:  block;
+    margin: 0 0 20px; /* arriba derecha abajo*/
+     padding: 10px 25px;/* padding aqui es el tamano de la caja de texto superior inferior costados*/
+     width: 50%; /*largo*/
+}
+
+.Checkbox{
+
+    margin: 20px 0;/* espacio verticial horizontal*/
+}
+
+.BotonEnviar{
+width: 40%;
+padding: 15px 0; /*espaciamiento interno, arriba abajo - laterales*/
+font-size: 18px;
+font-weight: bold;
+color: white;
+background: orange;
+/*border: none;*/
+border-radius: 5px;
+/*esto es para q la transicion demore de cuando se cambie el color del boton por el .BotonEnviar:hover */
+transition: 1s background;/* esta es para q la transicion de background en BotonEnviar:hover dure 1s.*/
+transition: 0.5s all;/*tambn se puede poner all pa todos*/
+}
+
+.BotonEnviar:hover{ /*llamo la propiedad enviar y la propiedad hover q la llamo con :*/
+/*hover captura el comportamiento del mov del mouse, aqui es para q cuando el mouse este en el boton, este cambie de color*/
+
+background: darkorange;
+transform:  scale(1.1) rotate(5deg);/*Aumentame 101% cuando el cursor este en el boton y rota 5grados*/
+
+cursor: pointer;/*Cambia el tipo de cursor al estar el mouse en el boton:*/
+
+}
+
+table{
+    margin: 40px 40px;/*margenes tabla- superior e inferior y laterales*/
+    
+}
+thead{
+
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;/*espaciamiento interno, superior infeerior, laterales*/
+}

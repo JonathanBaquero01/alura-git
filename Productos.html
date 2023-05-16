@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+         <title> Productos -Barberia Alura</title>
+          
+            <link rel="stylesheet" href="Productos.css">
+        
+
+    </head>
+
+
+ <body><!-- Recordar q header caracteriza al bloque del encabezado -->
+    <header>
+        <div class="caja"> <!-- recordemos que Div es uns etiqueta pa crear bloqes -->
+            <h1><img src="Imagenes/logo.png"></h1>
+
+                <nav><!--Con nav nos referimos a el panel de navegacion -->
+                    <ul ><!-- Lista unorder list -->
+                        <li><a href="index.html">Home</a></li><!-- Este a href es para q cuando le de click vaya a una pagina ya sea interna o externa, en este caso a nuestro index, pero puede ser otra como facebook -->
+                        <li><a href="Productos.html"> Productos</a></li>
+                        <li><a href="Contacto.html"> Contacto</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+
+    <main><!-- Main de principal, cuerpo de la pagina-->
+        <ul class="Productos"><!-- recordar ul de unorder list-->
+            <li>
+                <h2>Cabello</h2>
+                    <img src="Imagenes/cabello.jpg">
+                       <p class="ProductoDescripcion">Con tijera o maquina</p>
+                       <p class="ProductoPrecio">$10.00</p>
+            </li>
+            <li>
+                <h2>Barba</h2>
+                    <img src="Imagenes/barba.jpg">
+                       <p class="ProductoDescripcion">Corte y diseño profesional de barba</p>
+                       <p class="ProductoPrecio">$8.00</p>
+            </li>
+            <li>
+                <h2>Cabello + Barba</h2>
+                    <img src="Imagenes/cabello+barba.jpg">
+                       <p class="ProductoDescripcion">Paquete completo de cabello y barba</p>
+                       <p class="ProductoPrecio">$15.00</p>
+            </li>
+        </ul>
+    </main>
+    <footer><!-- pie de pagina-->
+        <img src="Imagenes/logo-blanco.png"><!-- Debo buscar el codigo del simbolo para html aqui: https://old.unicode-table.com/es/ tambien me muestra codigos pa emojis-->
+            <p class="TextoCopyright">&#169 © &#128133; Copyright Barberia Alura 2023</p>
+    </footer>
+ </body>
+</html>

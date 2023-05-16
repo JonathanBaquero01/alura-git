@@ -1,0 +1,101 @@
+header{
+background-color: #BBBBBB;
+padding: 20px 0;/* espaciamiento externo-- superior-inferior laterales */
+}
+.caja{
+   
+    width: 940px; ;/* le digo a nuestro div q ocupe esto, 940 por q  las pantallas tienen 1080p */
+    position: relative;
+    margin: 0 auto;/* automatico a los bordes */
+}
+nav{
+    position: absolute;/* para poder modificar su posicionn */
+    top: 0; /* 0 es ningun espacio , tambn puedo  usar medidas  por ejemplo 50px*/
+    right: 0;
+}
+
+nav li{
+display: inline;/* pa volver la lista en horizontal, no le coloco liv directamente por q si uso otra lista, cogera esa propiedad */
+margin: 0 0 0 15px;/* esopaciamiento interno, arriba derecha abajo izquierda */
+
+}
+
+nav a{ /* hacemos referencia a nuestros items de la lista */
+text-transform: uppercase;
+color:black;
+font-weight: bold;/* negrilla*/
+font-size: 22px;
+text-decoration: none;/* le quiito lo azulito del texto, asi cuando se sabe q un texto es un link*/
+
+}
+nav a:hover{ /*hover captura el comportamiento del mov del mouse*/
+color: #c78c19; /*osea q cuando q cuando captura el mouse, cambia de color*/
+text-decoration: underline;/*tambn se subrayara*/
+}
+
+.Productos{
+    width: 940px; ;/* le digo a nuestro div q ocupe esto, 940 por q  las pantallas tienen 1080p */
+    margin: 0 auto;/* automatico a los bordes */
+padding: 50px 0;/* padding de espaciamiento , vertical horizontal*/
+}
+
+.Productos li {/* li pa referirnos a los item de la lista*/
+
+    display: inline-block;/* como lo dice, en una linea en bloque*/
+    text-align: center;
+    width: 30%;/* q cada elemento ocupe el 30% del espacio*/
+    vertical-align: top;
+   /* background-color: #CCCCCC; */ /*Solo nos ayudara a ver lo q ocupa*/
+    margin: 0 1.5% 0 0;/* espaciamiento interno, arriba derecha abajo izquierda */
+    padding:  30px 20px; /* padding de espaciamiento , vertical horizontal*/
+    box-sizing: border-box;/* que los 30px q le pusimos no sobrepasaran el 30% de width, seran contabilizados dentro de ese 30%*/
+
+    border-color: black;
+    border-width: 2px;/* ancho del borde*/
+    border-style: dashed;
+
+    border-radius: 15px;/* para q nuestro borde no tenga esquina, ahi le doy el tamaño q quiero q tengan los bordes*/
+}
+
+.Productos li:hover{/*hover captura el comportamiento del mov del mouse*/
+    border-color: #c78c19; /*osea q cuando q cuando captura el mouse, cambia de color*/
+    font-size: 33px;
+}
+
+
+.Productos li:active{/*active captura el click del mouse, cuando haga click haga tal cosa*/
+    border-color: green; /*osea q cuando q cuando captura el mouse, cambia de color*/
+
+}
+
+.Productos h2 {/* se centra unicamente en el h2 de las listas*/
+    font-size: 30px;
+    font-weight: bold;/* negrilla*/
+}
+
+.Productos li:hover h2{/*hover captura el comportamiento del mov del mouse , para q directamente me vaya al h2, debo indicarle*/
+    border-color: #c78c19; /*osea q cuando q cuando captura el mouse, cambia de color*/
+    font-size: 33px;
+}
+
+.ProductoDescripcion{
+    font-size: 18px;
+}
+
+.ProductoPrecio{
+    font-size: 20px;
+    font-weight: bold; /* negrilla*/
+    margin-top: 10px;  /* q lo separe un poco del top*/
+}
+
+footer{
+text-align: center;
+background: url(Imagenes/bg.jpg);/* Background me hace  un copy paste de la imagen hasta completar todo el footer*/
+padding: 40px 0; /* padding de espaciamiento , vertical horizontal*/
+}
+
+.TextoCopyright{
+    color: white;
+    font-size: 13px;
+  /*  margin: 20px;*/
+}

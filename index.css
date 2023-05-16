@@ -1,0 +1,143 @@
+body{
+    font-family: 'Rubik', sans-serif;/*Este es el css de la fuente externa q cogi de https://fonts.google.com como lo coloco en el body afecta toda la pagina*/
+    background-color: #CCCCCC;/* Esto me cambia de color toda la  pag, ya q es el body*/
+    }
+    
+    #banner{
+        width: 50%;/*asi es mejor, se ajusta a pantallas de pc y cell*/
+        /* width: calc(50%+1)/* este me ayuda a calcular si necesito operaciones*/
+        display: block;/*Esto solo me centra la imagen*/
+        margin: 0 auto;
+    }
+
+
+    .Principal{
+        padding: 3em 0;/*Espciamiento interno*/
+        background: #FEFEFE;
+        padding: 20px;/*le doy espacio para abajo, aumenta espaciamiento interno*/
+        clear: left;/*le digo q la imagen q quiero q el texto rodee, solo aplicara en este bloque*/
+   
+    }
+
+    .Principal:first-letter{/* q me afecte solo la 1ra letra*/
+        font-weight: bold;
+    }
+
+
+p:first-line{/* q me afecte el 1er renglon de las p*/
+font-style: italic;
+}
+
+    h1{
+        text-align: center;
+        text-shadow: 2px 2px 10px black;/* sombra: posicion laterales. posicion arriba-abajo, difuminacion, expancion, color
+        
+        }
+
+ .Utensilios{
+            width: 150px;
+            float: left;/*Esto es para q el texto rodee una imagen, osea dejar los otros elementos alrededor de él.*/
+            margin: 0 20px 20px 0;/*superrior derecha inferior izquierda*/ 
+        }
+
+p {/* Todas las etiquetas con p en HTML cogeran este estilo */
+    text-align: center;
+    font-size: 30px;
+    background-color: #CCCCCC;
+}
+/*si tenemos una P que no queremos q sea igual q el resto le podemos poner un ID q seria mision*/
+#mision{
+    font-size: 20px;
+}
+
+.Mapa{
+    padding: 3em 0;/*3em es 3veces el tamano de la fuente q esta configurado por defecto*/
+    background: linear-gradient(#FEFEFE, #888888 );/*PARA QUE ME HAGA UN DEGRADADO*/
+}
+
+.Mapa p{
+
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.Mapa-Contenido{
+
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+.Contenido-diferenciales{
+    width:  640px;
+    margin: 0 auto;/* 0 arriba y abajo y auto a los laterales*/
+}
+
+.Lista-diferenciales{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+line-height: 1.5;/* altura de los items de la lista, para q se separen, aqui seria 1 +50% del tamano original*/
+}
+
+.items:nth-child(1){/*pseudoclases, esto significa q de todos los items afecte al 1ro, 2n es q se pinten solo los pares*/
+    font-weight: bold;
+}
+
+.Diferenciales{/*Le doy estilos al div*/
+    background: #888888;
+    padding: 3em 0;
+    box-shadow: inset 0 0 30px 10px black; /* sombra interna: posicion laterales. posicion arriba-abajo, difuminacion, expancion, color*/
+}
+
+h2{
+    text-align: center;
+}
+
+.items{/*esto ya es una clase referenciada, a diferencia de los ID, clases abarcan mas items, el ID solo uno*/
+    font-style: italic;
+    }
+
+    .items:before{/*q antes de lositems haga tal cosa*/
+        content: "🌟";
+    }
+
+    ul{
+display: inline-block;/*Le digo q solo ocupe ele spacio de su contenido, que lo q tenga a la derecha o donde sea se pueda ajustar*/
+vertical-align: top;
+width: 20%;/*tamano*/
+margin-right: 15;/*q cuanto ocupe a la derecha*/
+
+    }
+
+.ImagenCorteCabello{
+    width: 60%;
+    transition: 400ms;/*recordar q esto es la transicion de los hover*/
+    box-shadow: 10px 10px 30px 5px black; /* sombra: posicion laterales. posicion arriba-abajo, difuminacion, expancion, color*/
+
+}
+
+.ImagenCorteCabello:hover{ /*recordar q over es cuando el mouse esta en el item*/
+    opacity: 50%;
+
+}
+
+.Video{
+width:  560px;/*misma anchura del video*/
+margin: 1em auto;/*automatico a los laterales*/
+
+}
+
+strong{ /*Nuevamente esto solo me afectara las etiquetas strong*/
+    color: crimson;
+}
+
+@media screen and (max-width:480px){ /*le digo si encuentra una pantalla con 480px, aplica tal cosa*/
+.Principal, .Diferenciales, .Video{/*es mejor desde el principio ir dejando todo en auto o colocar porcentajes%  pa q se adapte al cel*/
+    width: auto;
+}
+
+}

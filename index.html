@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html lang="es-ES"><!--Importante definir el lenguaje-->
+
+        <head><!--Head me separa las etiquetas informormativas, como la meta y el titulo , de las etiquetas de contenido q seria el titulo-->
+
+            <meta charset="UTF-8"><!--Con esto le decimos que use caracteres especiales, tiene la mayoria de idiomas-->
+            <meta name="viewport" content="width=device-width"> <!--esto es para q use y adapte nuestra pagina para celulares tambn-->
+            <title> Barberia Alura</title>
+                  
+                    <link rel="stylesheet" href="index.css"> <!--Le digo q busque el neustro archivo css-->
+
+                  <!--En https://fonts.google.com/ puedo importar letras , busco una, le doy click luego en Medium 500 y copio lo de link y lode CSS-->  
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+        </head>
+
+<body><!--Con body ya defino todas las etiquetas de condenido de la pagina, esto es para orden y divide en segmentos lo que ayuda en CSS-->
+
+    <div><!--Header hace referencia a nuestro encabezado principal-->
+        <header>
+            <div class="caja"> <!-- recordemos que Div es uns etiqueta pa crear bloqes -->
+                <h1><img src="Imagenes/logo.png"></h1>
+    
+                    <nav><!--Con nav nos referimos a el panel de navegacion -->
+                        <ul ><!-- Lista unorder list -->
+                            <li><a href="index.html">Home</a></li><!-- Este a href es para q cuando le de click vaya a una pagina ya sea interna o externa, en este caso a nuestro index, pero puede ser otra como facebook -->
+                            <li><a href="Productos.html"> Productos</a></li>
+                            <li><a href="Contacto.html"> Contacto</a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </header>
+    </div>
+
+    <main></main>
+        <img id="banner" src="Imagenes/barberia.jpeg"><!--Le dire donde tengo la imagen-->
+
+             <div class="Principal"> <!-- div es para dividir nuestor codigo en bloques, dividir la pagina en bloques, ademas puedo aplicarle CSS solo en esta seccion del Div-->
+                 <h1>Sobre la Barbería Alura</h1><!-- Hay 6 niveles de h-->
+
+                 <img class="Utensilios" src="Imagenes/utensilios[1].jpg" alt="Utensilios de un barbero">
+
+                     <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p><!-- p de parrafo-->
+                 <!-- strong de fuerte, lo vuelve negrilla-->
+    
+                          <!-- em lo pone en italico y ponemos el ID pa q identifique la clase exacta del CSS-->
+                         <p id="mision"><em> Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+        Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+            </div>
+
+
+            <section class="Mapa">
+                <h3 class="Principal"> Nuestra ubicacion</h3>
+                    <p>Nuestro establecimiento esta ubicado en el corazon de la ciudad</p>
+ <!-- pa insertar un mapa, vamos a maps, click en las 3 rayas de esquina superior izq, compartir o insertar mapa, insertar un mapa y ahi nos dan el codigo-->
+                        <div class="Mapa-Contenido">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26313.691405046557!2d-46.66311651031245!3d-23.581270757011254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses!2sco!4v1683666694925!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+
+            </section>
+   
+    <div  class="Diferenciales">
+<!-- Evitar poner todo ese codigo extra puedo definir un style para todos los p , ESTO SE SUELE HACER EN OTRO ARCHIVO .CSS, LO HAREMOS EN OTRO ARCHIVO-->
+       <!--
+ <style>
+    p {
+        text-align: center;
+        font-size: 30px;
+    }
+ </style>p-->
+
+
+ <h3>Diferenciales</h3>
+ <div class="Contenido-diferenciales">
+    <ul class="Lista-diferenciales"><!-- unorder list, para listas no ordenadas-->
+        <li class="items">Atencion profesonalizada pa los clientes</li><!-- List item, y las class es cuando quiero referenciar varios items, a diferencia de ID que solo me deja 1-->
+        <li class="items">Espacio diferenciado</li>
+        <li class="items">Localizacion</li>
+        <li class="items">Profesionales calificados</li>
+    </ul><img src="Imagenes/CorteCabello.png" class="ImagenCorteCabello">
+ </div>
+    
+    <div class="Video">
+         <!-- pa video de yutub, le damos en compartir,  insertar y nos da el codigo-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/81H41vp96ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    </div>
+
+</body>
+    </html>

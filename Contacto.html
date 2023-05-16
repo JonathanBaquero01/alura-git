@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+         <title> Contacto</title>
+            <link rel="stylesheet" href="reset.css"> <!-- este archivo me ayuda a vorrar los problemas de espacio y letras q tiene el navegador -->
+            <link rel="stylesheet" href="Contacto.css">
+
+    </head>
+
+
+ <body><!-- Recordar q header caracteriza al bloque del encabezado -->
+    <header>
+        <div class="caja"> <!-- recordemos que Div es uns etiqueta pa crear bloqes -->
+            <h1><img src="Imagenes/logo.png" alt="Logo barbaeria Alura"></h1><!-- Ese texto se mostrara si la imagen no carga-->
+
+                <nav><!--Con nav nos referimos a el panel de navegacion -->
+                    <ul ><!-- Lista unorder list -->
+                        <li><a href="index.html">Home</a></li><!-- Este a href es para q cuando le de click vaya a una pagina ya sea interna o externa, en este caso a nuestro index, pero puede ser otra como facebook -->
+                        <li><a href="Productos.html"> Productos</a></li>
+                        <li><a href="Contacto.html"> Contacto</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+
+     <main>
+        <form><!--Representa q vamos a hacer un formulario-->
+            <label for="NombreYApellido">Nombre y apellido</label><!--Representa q vamos a hacer un formulario, ademas lo q esta en el for lo debo poner como ID en el input para unirlos-->
+                <input type="text" id="NombreYApellido" class="input-padron" required> <!--Me da una caja de texto para q el usuario escriba, el required es si el camp oes obligatorio, no dejara enviar si eso esta vacio -->
+                    <label for="Correo"> Correo</label>
+                    <input type="email" id="Correo" class="input-padron" required placeholder="email@dominio.com"> 
+                        <label for="Telefono"> Telefono</label>
+                        <input type="tel" id="Telefono" class="input-padron" required placeholder="(XX)XXXX XXXX"> 
+
+                            <label for="Mensaje"> Mensaje</label>
+                            <textarea name="" id="Mensaje" cols="70" rows="10" class="input-padron" required> </textarea>
+
+                                <fieldset><!--Este se usa cuando un grupo pekeno de codigo es comun, como un formulario u opciones PERO TAMBN SE PUEDE CON DIV-->
+                                     <p>Como le gustaria que lo contactemos?</p>
+                                        <label for="Radio-Email"><input type="radio" name="Contacto" value="email" id="Radio-Email">   Email</label>
+                                         <!--Este es para colocar un boton esos q se seleccionan, ADEMAS notese q en name todos dicen CONTACTO, es para q no se seleccionen todos a la vez, solo 1, y el checked es pa q este chuleado por defecto-->       
+                                         <label for="Radio-What's app"> <input type="radio" name="Contacto" value="what's app" id="Radio-What's app" checked>  What's app</label>
+                                              
+
+                                                <label for="Radio-Telefono">  <input type="radio" name="Contacto" value="Telefono" id="Radio-Telefono">  Telefono</label>                                            
+                                </fieldset>
+
+                                <div>
+                                    <p>En que horario quiere ser atendido?</p>
+                                    <select name="" id=""><!--Esto es para hacer un selector, de esos que se despliegar con varias opciones-->
+                                         <option value="">Mañana</option>
+                                         <option value="">Tarde</option>
+                                         <option value="">Noche</option>
+                                     </select>
+                                </div>
+                                
+                                
+                                <label  class="Checkbox"><input type="checkbox" checked> Le gustaria recibir novedades de la Barberia Alura?</label><!--Pa EVITAR eso del FOR y ID pa relacionar el label con el input, se puede colocar el input dentro del label-->
+                               
+                                     <input type="submit" value="Enviar" class="BotonEnviar"><!--Y este es para el boton de enviar-->
+                    
+        </form>
+        <!--Dibujaremos una tabla-->
+        <table>
+
+            <thead> <!--t de tabla, y head de encabezado-->
+
+                <tr> <!--Celdas-->
+                <th> Dias </td><!--Celdas especificas que perteneces a este encabezado-->
+                <th>Horario</td>
+            </tr>
+             </thead> 
+
+            <tbody><!--Cuerpo de la tabla-->
+             <!--Table row-->
+            <tr>
+                <td> <!--Celdas-->Lunes </td>
+                <td> <!--Celdas-->8h-20h </td>
+            </tr>
+            <tr>
+                <td> <!--Celdas-->Miercoles </td>
+                <td> <!--Celdas-->8h-20h </td>
+            </tr>
+            <tr>
+                <td> <!--Celdas-->Viernes </td>
+                <td> <!--Celdas-->8h-20h </td>
+            </tr>
+           </tbody>
+            
+           
+        </table>
+     </main>
+
+    <footer><!-- pie de pagina-->
+        <img src="Imagenes/logo-blanco.png" alt="Logo barbaeria Alura"><!-- Debo buscar el codigo del simbolo para html aqui: https://old.unicode-table.com/es/ tambien me muestra codigos pa emojis-->
+            <p class="TextoCopyright">&#169 © &#128133; Copyright Barberia Alura 2023</p>
+    </footer>
+ </body>
+</html>
